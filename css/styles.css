@@ -1,0 +1,78 @@
+ul {
+    list-style: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    width: 350px;
+}
+
+.card-img-top {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    #footer {
+        flex-direction: row;
+    }
+}
+
+.iconify {
+    font-size: 50px;
+    color: green;
+}
+
+.icono-insta {
+    color: black;
+}
+
+.cualquiera:visited {
+    color: red;
+}
+
+.navbar-nav li:nth-child(even) {
+    background-color: red;
+}
+
+input:focus {
+    border: solid blue;
+    outline: blue;
+}
+
+.producto-remera,
+.producto-pc {
+    display: none;
+}
+
+/* ~ el hermano siguiente */
+#remeras:checked ~ .producto-remera,
+#pc:checked ~ .producto-pc {
+    display: block;
+}
